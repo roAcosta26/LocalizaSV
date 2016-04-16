@@ -29,7 +29,7 @@ public class tipo_cliente implements Serializable{
 	private String tipo_cliente_descripcion;
 
 	public tipo_cliente() {
-		
+		super();
 	}
 
 	public int getTipo_cliente_id() {
@@ -55,10 +55,5 @@ public class tipo_cliente implements Serializable{
 	public void setTipo_cliente_descripcion(String tipo_cliente_descripcion) {
 		this.tipo_cliente_descripcion = tipo_cliente_descripcion;
 	}
-	
-	
-	
-	
-	
 	
 }

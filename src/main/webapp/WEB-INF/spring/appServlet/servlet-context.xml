@@ -28,9 +28,9 @@
 	<jpa:repositories base-package="com.rodrigo.localiza.app" />
 
 	<beans:bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-	        <beans:property name="driverClassName" value="org.postgresql.Driver"/>  driver bd
+	        <beans:property name="driverClassName" value="org.postgresql.Driver"/>
 	        <beans:property name="url" value="jdbc:postgresql://localhost/localiza"/>
-	                <beans:property name="username" value="localiza"/>
+	        <beans:property name="username" value="localiza"/>
 	        <beans:property name="password" value="loc123"/>
 	 </beans:bean>
 
@@ -47,6 +47,7 @@
 	</beans:bean>
 
 	<beans:bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+	
 	</beans:bean>
  
 </beans:beans>
