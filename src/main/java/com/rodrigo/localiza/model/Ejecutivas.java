@@ -5,6 +5,7 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
@@ -19,8 +20,7 @@ public class Ejecutivas implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	@Id
-	@GenericGenerator(name="autoIncrement", strategy="incremente")
-	@GeneratedValue(generator="autoIncrement")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id_ejecutiva")
 	private int id;
 	
@@ -30,7 +30,7 @@ public class Ejecutivas implements Serializable {
 	@Column(length=70)
 	private String apellido;
 	
-	@JoinColumn(name="fk_usuario", referencedColumnName="id_user")
+	@JoinColumn(name="fk_usuario", referencedColumnName="id_usuario")
 	@OneToOne
 	private Usuario usuarios;
 	

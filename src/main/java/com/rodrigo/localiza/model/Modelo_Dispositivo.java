@@ -5,6 +5,7 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -21,15 +22,17 @@ public class Modelo_Dispositivo implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
-	@GenericGenerator(name="autoIncrement" , strategy="increment")
-	@GeneratedValue(generator="autoIncrement")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id_modelo")
 	private int id;
+	
 	@Column(length=100)
 	private String modelo;
+	
 	@JoinColumn(name="fk_id_marca", referencedColumnName="id_marca")
 	@ManyToOne
 	private Marca_Dispositivo marca;
+	
 	public Modelo_Dispositivo() {
 		super();
 		
