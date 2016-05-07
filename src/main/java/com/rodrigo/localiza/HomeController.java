@@ -36,6 +36,11 @@ public class HomeController {
 		return "home";
 	}
 	
-	
+	@RequestMapping(value = "/dashboard", method = RequestMethod.GET)
+    public String loginPage(Model model ) {
+         
+        return "dashboard";
+    }
+ 
 	
 }

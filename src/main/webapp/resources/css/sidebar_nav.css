@@ -1,0 +1,92 @@
+@font-face{
+  font-family: "League";
+  src: url(../fonts/leaguegothic-regular-webfont.ttf);
+}
+
+/* Simple reset */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+/* Navigation */
+
+nav{
+  font-family: "League";
+  width: 280px;
+  height: 100%;
+  background: black;
+  position: fixed;
+  top: 0; left: -220px;
+  z-index: 2;
+  transition: left .7s;
+  -webkit-transition: left .7s;
+}
+
+nav:hover{
+  left: 0;
+}
+
+nav:hover ~ #content{
+  opacity: .3;
+}
+
+nav a, nav a:hover{
+  text-decoration: none;
+}
+
+
+
+/* Navigation -- Header */
+
+nav header{
+  margin: 40px 20px 30px;
+}
+
+
+
+
+/* Navigation -- Links */
+
+nav ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+nav li a{
+  display: block;
+  border-left: 3px solid transparent;
+  padding: 16px 20px;
+  font-weight: 100;
+  font-size: 25px;
+  letter-spacing: 1pt;
+  	color: rgba(200,200,200,.5);
+}
+
+nav li a:hover{
+  background: rgba(0,0,0,.1);
+  border-color: white;
+  color: #eee;
+  
+}
+
+nav li a:before{
+  content: '';
+  width: 0;
+  height: 0;
+  display: inline-block;
+  margin: 3px 0 0 -20px;
+  border: 8px solid transparent;
+
+}
+
+nav li a:hover:before{
+  border-left-color: #d31145;
+}
+
+

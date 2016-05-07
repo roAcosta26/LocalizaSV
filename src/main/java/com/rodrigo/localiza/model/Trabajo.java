@@ -63,7 +63,7 @@ public class Trabajo implements Serializable{
 	@ManyToOne
 	private Modelo_Dispositivo modeloDispositivo;
 	
-	@JoinColumn(name="fk_cliente", referencedColumnName="id_cliente")
+	@JoinColumn(name="fk_cliente", referencedColumnName="cliente_id")
 	@ManyToOne
 	private Cliente cliente;
 	

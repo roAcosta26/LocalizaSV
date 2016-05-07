@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('icomoon.eot?zc1qte');
+    src:    url('icomoon.eot?zc1qte#iefix') format('embedded-opentype'),
+        url('icomoon.ttf?zc1qte') format('truetype'),
+        url('icomoon.woff?zc1qte') format('woff'),
+        url('icomoon.svg?zc1qte#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-podcast:before {
+    content: "\e91c";
+}
+.icon-file-text:before {
+    content: "\e922";
+}
+.icon-phone:before {
+    content: "\e942";
+}
+.icon-address-book:before {
+    content: "\e944";
+}
+.icon-envelop:before {
+    content: "\e945";
+}
+.icon-location:before {
+    content: "\e947";
+}
+.icon-location2:before {
+    content: "\e948";
+}
+.icon-compass:before {
+    content: "\e949";
+}
+.icon-compass2:before {
+    content: "\e94a";
+}
+.icon-map:before {
+    content: "\e94b";
+}
+.icon-map2:before {
+    content: "\e94c";
+}
+.icon-user:before {
+    content: "\e971";
+}
+.icon-users:before {
+    content: "\e972";
+}
+.icon-user-plus:before {
+    content: "\e973";
+}
+.icon-user-minus:before {
+    content: "\e974";
+}
+.icon-user-check:before {
+    content: "\e975";
+}
+.icon-user-tie:before {
+    content: "\e976";
+}
+.icon-key:before {
+    content: "\e98d";
+}
+.icon-lock:before {
+    content: "\e98f";
+}
+.icon-unlocked:before {
+    content: "\e990";
+}
+.icon-wrench:before {
+    content: "\e991";
+}
+.icon-equalizer:before {
+    content: "\e992";
+}
+.icon-equalizer2:before {
+    content: "\e993";
+}
+.icon-cog:before {
+    content: "\e994";
+}
+.icon-cogs:before {
+    content: "\e995";
+}
+.icon-hammer:before {
+    content: "\e996";
+}
+.icon-bin:before {
+    content: "\e9ac";
+}
+.icon-truck:before {
+    content: "\e9b0";
+}
+.icon-accessibility:before {
+    content: "\e9b2";
+}
+.icon-target:before {
+    content: "\e9b3";
+}
+.icon-clipboard:before {
+    content: "\e9b8";
+}
+.icon-menu:before {
+    content: "\e9bd";
+}
+.icon-warning:before {
+    content: "\ea07";
+}
+.icon-notification:before {
+    content: "\ea08";
+}
+.icon-question:before {
+    content: "\ea09";
+}
+.icon-exit:before {
+    content: "\ea14";
+}
+
